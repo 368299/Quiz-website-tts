@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookkeeping Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- User Information Form -->
+    <div class="form-container" id="form-container">
+        <h2>Enter Your Details</h2>
+        <form id="user-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <input type="tel" id="phone" placeholder="Your Cell Number" required>
+            <button type="submit">Start Quiz</button>
+        </form>
+    </div>
+
+    <!-- Quiz Section (Hidden Initially) -->
+    <div class="quiz-container hidden" id="quiz-container">
+        <h1>Bookkeeping Quiz</h1>
+        <p id="question">Loading...</p>
+        <div id="options"></div>
+        <p id="timer">Time Left: <span id="time-left">60</span> sec</p>
+    </div>
+
+    <!-- Result Screen -->
+    <div class="result-container hidden" id="result-screen">
+        <h2>Quiz Completed!</h2>
+        <p id="score"></p>
+        <button id="exit-btn">Exit</button>
+    </div>
+
+    <!-- Thank You Screen -->
+    <div class="thank-you-container hidden" id="thank-you-screen">
+        <h2>Thank You for Participating!</h2>
+        <p>Presented by <b>The Tax Savers</b></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
